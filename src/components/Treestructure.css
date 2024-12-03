@@ -1,0 +1,44 @@
+.tree-structure {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.tree-node {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+
+.node-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.children {
+  margin-top: 10px;
+}
+button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 8px;
+}
+button:hover {
+  background-color: #ddd;
+}

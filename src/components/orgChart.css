@@ -1,0 +1,162 @@
+/* Container Styling */
+#chart-container {
+    font-family: Arial, sans-serif;
+    height: 500px;
+    border: 2px dashed #aaa;
+    border-radius: 5px;
+    overflow: auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    position: relative;
+  }
+  
+  /* Initial Add Root Node Button */
+  #chart-container button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    cursor: pointer;
+  }
+  
+  #chart-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* OrgChart Node Styling */
+  .orgchart {
+    background: #fff;
+    border-radius: 8px;
+  }
+  
+  .orgchart .node {
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #f0f8ff;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .orgchart .node:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .orgchart .node .title {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .orgchart .node .content {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Add Icon for Nodes */
+  .fa-plus-circle {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 1.5em;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .fa-plus-circle:hover {
+    color: #0056b3;
+  }
+  
+  /*-------------------------------------------- Popup Modal Styling---------------------------------------------------*/
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  
+  .modal-content h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .modal-content input,
+  .modal-content select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal-content button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .modal-content button:nth-child(1) {
+    background-color: #28a745;
+  }
+  
+  .modal-content button:nth-child(1):hover {
+    background-color: #218838;
+  }
+  
+  .modal-content button:nth-child(2) {
+    background-color: #dc3545;
+  }
+  
+  .modal-content button:nth-child(2):hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive OrgChart */
+  @media (max-width: 768px) {
+    .orgchart .node {
+      width: 120px;
+      font-size: 12px;
+    }
+  
+    #chart-container {
+      height: 400px;
+    }
+  
+    .modal-content {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  

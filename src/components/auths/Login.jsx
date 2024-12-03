@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Login.css';
-import Image6 from "../images/image6.png";
-import Image1 from "../images/image-1.jpg";
+import Image6 from "../../assets/image6.png";
+import Image1 from "../../assets/image-1.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faGithub, faGoogle, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faCopyright, faEnvelope, faLock, faUser } from '@fortawesome/free-solid-svg-icons';
@@ -11,7 +11,8 @@ const Login = () => {
   const [isActive, setIsActive] = useState(false);
   const [ishome, setIshome] = useState(false);
   return (
-    <div className="login-container" style={{width:'60vw', overflow:'hidden',padding:'30px'}}>
+
+    <div className="login-main">
       <div className="background">
           <div className="shape"></div>
           <div className="shape"></div>
@@ -25,8 +26,7 @@ const Login = () => {
           <div className="shape"></div>
           <div className="shape"></div>
       </div>
-
-    <div className={`container ${isActive ? 'active' : ''}`}>
+    <div className={`container-box ${isActive ? 'active' : ''}`}>
       {/* Login Form */}
       <div className="form-box login">
         <form>
@@ -137,6 +137,7 @@ const Login = () => {
       </div>
      </div>
     </div>
+  
   );
 };
 
